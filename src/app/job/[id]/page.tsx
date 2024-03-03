@@ -8,7 +8,7 @@ interface DynamicProps {
 }
 
 const getData = async (id: string) => {
-	const res: Response = await fetch(`http://localhost:3001/api/job/${id}`, {
+	const res: Response = await fetch(`http://localhost:3000/api/job/${id}`, {
 		cache: "no-store"
 	});
 	if (!res.ok) {
